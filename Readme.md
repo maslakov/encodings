@@ -1,6 +1,6 @@
-﻿##HTML Parser
-
-You need to develop a program to determine the encoding of Web pages.
+# HTML Parser coding challenge
+## Task definition
+A program to determine the encoding of Web pages.
 
 There is a text file with a list of page addresses.
 File format: each line contains one address, encoding utf-8.
@@ -20,9 +20,15 @@ The file format is free.
 
 The results of the program should be placed in a text file.
 
-File format: each line contains one pair of address-encoding, delimiter
-- tabulation, encoding utf-8.
+File format: each line contains one pair of address-encoding, delimiter - tabulation, encoding utf-8.
 
 The process of the program should be reflected in the log file.
 
 Errors in processing should not lead to an emergency stop of the program.
+
+## Solution
+in the class *UrlProcessor* 2 solutions are provided:
+- based on .NET regex parsing
+- based on custom parser (*SimpleTagSearcher*) backed by deterministic automata
+
+Performance difference is more than 10x in favor of custom parser.
