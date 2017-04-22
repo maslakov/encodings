@@ -1,0 +1,8 @@
+﻿iso-8859	iso-8859-1
+utf8	utf-8
+utf7	utf-7
+koi8u	koi8-u
+koi8r	koi8-r
+iso88595	iso-8859-5
+ascii	us-ascii
+unicode	utf-16
